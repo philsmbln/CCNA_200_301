@@ -42,3 +42,53 @@
 ## Application Layer
 - Protocols that make our data functions
 - like html that allows us to browse website everyday
+
+## Encapsulation/Deencapsulation
+- Application |
+- Presentation |
+- Session |
+- Transport | Segments
+- Network | Packets
+- Data Link | Frames
+- Physical | Bits
+
+# Switches, Routers, and Firewalls
+
+# Switches
+- Switches work in layer 2, but there's what you called layer 3 switch that is also capable of routing function.
+- Router is the device that works in layer 3
+- Firewalls operates at layer 3 for stateless firewall, layer 4 for stateful and layer 7 for NGFW
+- stateless meaning that it only knows how to filter based on IP, source and destination
+- Stateful examines TCP and UDP ports to filter traffic based on specific services, like allowing web traffic on port 80, 443 or blocking SSH traffic on port 22
+- NGFW operates at layer 7 which check data packets, which provies granular user-level access control
+
+## Collision domains
+- Layer 2 switches creates collision domain that provides collision free segmentation unlike the legacy networking devices hub
+- Good at providing mac address(es)
+
+## Broadcast domain
+- 
+
+# Routers
+- Obsession of router is in the IP addresses // layer 3
+- Gi0/1 | 10.10.10.1/255.255.255.0
+- Gi0/2 | 10.10.20.1/255.255.255.0
+- routers creates another broadcast domain
+- another port in the router is another collision domain
+
+# Layer 3 Switch
+- sometimes called multilayered switch
+- switch with layer 3 routing added to it
+- Gi0/1 and Gi0/2 should have 2 collision and 2 broadcast domain
+- you need to check with the specifications of the device to check if a switch is a layer 3 switch
+
+# Next Gen Firewall
+- Stateful is watching is whats occuring on what's in the network.
+- Application aware and control
+- Deep packet inspection
+
+# IPS
+- Real-time monitoring
+- Signature-based detection
+- Anomaly detection
+
