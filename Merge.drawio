@@ -1,5 +1,3 @@
-from pathlib import Path
-
 xml = r'''<mxfile host="app.diagrams.net">
   <diagram name="Network Diagram">
     <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200">
